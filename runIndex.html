@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="utf-8">
+    <title>QueryRecommendationSystem </title>
+  </head>
+  <body>
+    <div>
+    	<form action="/save-comment" method="POST">
+    		<label>Enter your Query</label>
+			<input name="text">
+			<input type="submit" value="Search">
+		</form>
+<br>
+          {% if bye %}
+        		<h2>  The results are : </h2>
+        		{{ bye }}
+        	{% endif %}
+  	</div>
+  </body>
+</html>
